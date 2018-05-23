@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// for(var i = 0; i <25; i++) {
+			// 	var d_num = ("0" + i).slice(-2);
+
+			// district number, must be two digits always
+				fetch('http://localhost:8081/scrape?district=01').then(function(response) {
+					response.json().then(function(data) {
+						console.log(data);
+					});
+				});
+			//}
+		</script>
+	</body>
+</html>
